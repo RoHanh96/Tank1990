@@ -14,4 +14,20 @@ public class BulletPlayer : MonoBehaviour {
 	void Update () {
 		GetComponent<Rigidbody2D> ().velocity = transform.up.normalized * speed;
 	}
+		
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Brick") {
+			Destroy (gameObject);
+			Destroy (other.gameObject);
+		}
+
+		if (other.tag == "Stone") {
+			Destroy (gameObject);
+		}
+
+		if (other.tag == "Enemy") {
+			Destroy (gameObject);
+			Destroy (other.gameObject);
+		}
+	}
 }

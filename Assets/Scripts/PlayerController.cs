@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour {
 			transform.position += (moveVector * Time.deltaTime * speed);
 		}
 
+		Clamp ();
+
 //		if (Input.GetKeyDown (KeyCode.Space)) {
 //			shootDelayCounter = shootDelay;
 //			Shot ();
@@ -53,5 +55,20 @@ public class PlayerController : MonoBehaviour {
 
 	public void Shot (){
 		Instantiate (bullet, firePoint.transform.position, firePoint.transform.rotation);
+	}
+
+	void Clamp(){
+		Vector2 min = Camera.main.ViewportToWorldPoint (new Vector2(0, 0));
+		Vector2 max = Camera.main.ViewportToWorldPoint (new Vector2(1, 1));
+
+		Vector2 pos = transform.position;
+
+		float width = GetComponent<BoxCollider2D> ().bounds.size.x;
+		float height = GetComponent<BoxCollider2D> ().bounds.size.y;
+
+		pos.x = Mathf.Clamp (pos.x, min.x + width/2, max.x - width/2);
+		pos.y = Mathf.Clamp (pos.y, min.y + height/2, max.y - height/2);
+
+		transform.position = pos;
 	}
 }
