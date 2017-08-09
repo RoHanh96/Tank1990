@@ -9,7 +9,6 @@ public class EnemyController : MonoBehaviour {
 	//public Transform shootPosition;
 	public GameObject bullet;
 	public float shotDelay;
-	private int direction = 1;
 	const int STATE_UP = 0;
 	const int STATE_DOWN = 1;
 	const int STATE_LEFT = 2;

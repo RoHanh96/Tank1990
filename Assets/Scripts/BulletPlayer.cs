@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour {
+public class BulletPlayer : MonoBehaviour {
 	public float speed;
 
 	// Use this for initialization
