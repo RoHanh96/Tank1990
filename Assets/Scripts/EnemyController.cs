@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour {
 	// Use this for initialization
 	public float speed;
 	//public Transform shootPosition;
+	const float clampBorderOffset = 1;
 	public GameObject bullet;
 	public float shotDelay;
 	const int STATE_UP = 0;
@@ -30,10 +31,12 @@ public class EnemyController : MonoBehaviour {
 		if(timeCounter > timeMove){
 			currentState = RandomState ();
 			Move ();
+			Clamp ();
 			timeCounter = 0f;
 		}
 		else{
 			Move ();
+			Clamp ();
 		}
 	}
 
@@ -86,6 +89,25 @@ public class EnemyController : MonoBehaviour {
 				break;
 			}
 		}
+	}
+
+	void Clamp(){
+		Vector2 min = Camera.main.ViewportToWorldPoint (new Vector2 (0, 0));
+		Vector2 max = Camera.main.ViewportToWorldPoint (new Vector2 (1, 1));
+		Vector2 pos = transform.position;
+		float width = GetComponent<BoxCollider2D> ().bounds.size.x;
+		float height = GetComponent<BoxCollider2D> ().bounds.size.y;
+		if(currentState == STATE_LEFT || currentState == STATE_RIGHT){
+				pos.x = Mathf.Clamp (pos.x, min.x + height/2, max.x - height/2);
+				pos.y = Mathf.Clamp (pos.y, min.y + width/2, max.y - width/2);
+				transform.position = pos;
+			}
+		else if(currentState == STATE_UP ||currentState == STATE_DOWN){
+				pos.x = Mathf.Clamp (pos.x, min.x + width/2, max.x - width/2);
+				pos.y = Mathf.Clamp (pos.y, min.y + height/2, max.y - height/2);
+				transform.position = pos;
+			}
+
 	}
 
 	void FireBullet(){
