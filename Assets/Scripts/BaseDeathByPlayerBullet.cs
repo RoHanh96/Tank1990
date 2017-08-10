@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseDeathByEnemyBullet : MonoBehaviour {
-
-	// Use this for initialization
+public class BaseDeathByPlayerBullet : MonoBehaviour {
 	public Sprite base_death;
+	// Use this for initialization
 	void Start () {
 		
 	}
@@ -16,9 +15,9 @@ public class BaseDeathByEnemyBullet : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D c){
-		if(c.tag == "EnemyBullet"){
-			gameObject.GetComponent<SpriteRenderer> ().sprite = base_death;
+		if(c.tag == "PlayerBullet"){
 			Destroy (c.gameObject);
+			gameObject.GetComponent<SpriteRenderer> ().sprite = base_death;
 		}
 	}
 }
