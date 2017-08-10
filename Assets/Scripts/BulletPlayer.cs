@@ -16,18 +16,14 @@ public class BulletPlayer : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Brick") {
-			Destroy (gameObject);
-			Destroy (other.gameObject);
-		}
-
 		if (other.tag == "Stone") {
 			Destroy (gameObject);
 		}
 
-		if (other.tag == "Enemy") {
+		if (other.tag == "Enemy" || other.tag == "EnemyBullet" || other.tag == "Brick") {
 			Destroy (gameObject);
 			Destroy (other.gameObject);
 		}
+			
 	}
 }
