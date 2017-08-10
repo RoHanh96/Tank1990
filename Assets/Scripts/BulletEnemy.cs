@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletEnemy : MonoBehaviour {
-
+	public EnemyController controller;
 	// Use this for initialization
 	public int speed;
 	public float lifeTime;
+	//public bool canDestroyStone = false;
 	public SpriteRenderer base_death;
 	private GameObject base_;
 	void Start () {
-		
+		controller = FindObjectOfType<EnemyController> ();
 	}
 	
 	// Update is called once per frame
@@ -29,7 +30,14 @@ public class BulletEnemy : MonoBehaviour {
 			Destroy (gameObject);
 		}
 		else if(c.tag == "Stone"){
-			Destroy (gameObject);
+			if(controller.type == 4){
+				Destroy (c.gameObject);
+				Destroy (gameObject);
+				//canDestroyStone = false;
+			}
+			else{
+				Destroy (gameObject);
+			}
 		}
 	}
 }
