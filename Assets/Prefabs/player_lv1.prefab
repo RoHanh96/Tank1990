@@ -151,6 +151,7 @@ MonoBehaviour:
   bullet: {fileID: 1601056465407702, guid: 34cdac47115ff9c458a6883e8ed4dcc5, type: 2}
   shootDelay: 1
   shootDelayCounter: 0
+  level: 1
 --- !u!212 &212574974052018726
 SpriteRenderer:
   m_ObjectHideFlags: 1

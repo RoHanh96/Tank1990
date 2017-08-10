@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
 	public float shootDelay;
 	public float shootDelayCounter;
 
+	public int level;
+
 	// Use this for initialization
 	void Start () {
 		shootDelayCounter = 0;
