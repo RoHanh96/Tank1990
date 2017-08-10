@@ -7,6 +7,8 @@ public class BulletEnemy : MonoBehaviour {
 	// Use this for initialization
 	public int speed;
 	public float lifeTime;
+	public SpriteRenderer base_death;
+	private GameObject base_;
 	void Start () {
 		
 	}
@@ -15,5 +17,19 @@ public class BulletEnemy : MonoBehaviour {
 	void Update () {
 		GetComponent<Rigidbody2D> ().velocity = transform.up.normalized * speed;
 		Destroy (gameObject, lifeTime);
+	}
+
+	void OnTriggerEnter2D(Collider2D c){
+		if(c.tag == "Player"){
+			Destroy (c.gameObject);
+			Destroy (gameObject);
+		}
+		else if(c.tag == "Brick"){
+			Destroy (c.gameObject);
+			Destroy (gameObject);
+		}
+		else if(c.tag == "Stone"){
+			Destroy (gameObject);
+		}
 	}
 }
