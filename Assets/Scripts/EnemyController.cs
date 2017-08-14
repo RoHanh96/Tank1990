@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour {
 	private float timeMove = 1.00f;
 	private static float timeCounter = 0.00f;
 
+	public bool canTravelWater = false;
+
 	IEnumerator Start(){
 		while(true){
 			FireBullet ();

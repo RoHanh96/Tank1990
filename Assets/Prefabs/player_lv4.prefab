@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 61018634656263578}
   m_Layer: 0
   m_Name: player_lv4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   bullet: {fileID: 1601056465407702, guid: 34cdac47115ff9c458a6883e8ed4dcc5, type: 2}
   shootDelay: 1
   shootDelayCounter: 0
+  canTravelWater: 0
 --- !u!212 &212976813005078550
 SpriteRenderer:
   m_ObjectHideFlags: 1

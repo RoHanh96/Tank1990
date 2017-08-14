@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 	public float speed = 5;
+	public float storeSpeed;
 
 	public Transform firePoint;
 	public GameObject bullet;
@@ -11,9 +12,12 @@ public class PlayerController : MonoBehaviour {
 	public float shootDelay;
 	public float shootDelayCounter;
 
+	public bool canTravelWater = false;
+
 	// Use this for initialization
 	void Start () {
 		shootDelayCounter = 0;
+		storeSpeed = speed;
 	}
 	
 	// Update is called once per frame
@@ -34,16 +38,11 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (x != 0 || y != 0) {
 			transform.eulerAngles = angle;
-			//Debug.Log (moveVector);
 			transform.position += (moveVector * Time.deltaTime * speed);
 		}
 
 		Clamp ();
 
-//		if (Input.GetKeyDown (KeyCode.Space)) {
-//			shootDelayCounter = shootDelay;
-//			Shot ();
-//		}
 		if(shootDelayCounter > 0)
 			shootDelayCounter -= Time.deltaTime;
 
