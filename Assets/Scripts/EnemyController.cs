@@ -6,10 +6,14 @@ public class EnemyController : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed;
+	public int type;
+	public int level;
+	//public bool canDestroyStone;
 	//public Transform shootPosition;
 	const float clampBorderOffset = 1;
 	public GameObject bullet;
 	public float shotDelay;
+	public bool collision = false;
 	const int STATE_UP = 0;
 	const int STATE_DOWN = 1;
 	const int STATE_LEFT = 2;
@@ -17,6 +21,11 @@ public class EnemyController : MonoBehaviour {
 	private int currentState = STATE_UP;
 	private float timeMove = 1.00f;
 	private static float timeCounter = 0.00f;
+
+//	void Awake(){
+//
+//		bullet.GetComponent<BulletEnemy>().controller = this;
+//	}
 
 	IEnumerator Start(){
 		while(true){
@@ -28,11 +37,13 @@ public class EnemyController : MonoBehaviour {
 	void Update () {
 		//GoUp ();
 		timeCounter += Time.deltaTime;
-		if(timeCounter > timeMove){
+		if(timeCounter > timeMove || collision){
+			print (collision);
 			currentState = RandomState ();
 			Move ();
 			Clamp ();
 			timeCounter = 0f;
+			collision = false;
 		}
 		else{
 			Move ();
@@ -112,5 +123,11 @@ public class EnemyController : MonoBehaviour {
 
 	void FireBullet(){
 		Instantiate(bullet, transform.GetChild(0).position, transform.GetChild(0).rotation);
+	}
+
+	void OnTriggerEnter2D(Collider2D c){
+		if(c.tag == "Brick" || c.tag == "Stone" || c.tag == "Water" || c.tag == "Enemy"){
+			collision = true;
+		}
 	}
 }
