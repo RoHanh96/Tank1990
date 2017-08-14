@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 50457687883746378}
   - component: {fileID: 114910402215371124}
   - component: {fileID: 61018634656263578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: player_lv4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,11 +146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d5137b57d55964588b7b1985ca22ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   firePoint: {fileID: 4793081757020492}
   bullet: {fileID: 1601056465407702, guid: 34cdac47115ff9c458a6883e8ed4dcc5, type: 2}
   shootDelay: 1
   shootDelayCounter: 0
+  level: 4
 --- !u!212 &212976813005078550
 SpriteRenderer:
   m_ObjectHideFlags: 1
