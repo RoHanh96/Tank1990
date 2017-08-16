@@ -25,8 +25,13 @@ public class EnemyController : MonoBehaviour {
 	private static float timeCounter = 0.00f;
 	private Emitter emitter;
 
+	public bool canTravelWater;
+	public float storeSpeed;
+
 	void Awake(){
 		health = level;
+		canTravelWater = false;
+		storeSpeed = speed;
 		emitter = FindObjectOfType<Emitter> ();
 	}
 
