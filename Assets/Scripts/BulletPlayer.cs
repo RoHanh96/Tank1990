@@ -14,6 +14,7 @@ public class BulletPlayer : MonoBehaviour {
 	void Start () {
 		player = FindObjectOfType<PlayerController> ();
 		emitter = FindObjectOfType<Emitter> ();
+		player = FindObjectOfType<PlayerController> ();
 	}
 	
 	// Update is called once per frame
@@ -32,12 +33,12 @@ public class BulletPlayer : MonoBehaviour {
 			Destroy (gameObject);
 			Destroy (other.gameObject);
 		}
-
-//		if (other.tag == "Enemy") {
-//			emitter.numberEnemyOnDisplay--;
-//			Destroy (gameObject);
-//			Destroy (other.gameObject);
-//			Instantiate (explosion, other.transform.position, other.transform.rotation);
-//		}
+		if (other.tag == "Enemy") {
+			player.exp += 100;
+			emitter.numberEnemyOnDisplay--;
+			Destroy (gameObject);
+			Destroy (other.gameObject);
+			Instantiate (explosion, other.transform.position, other.transform.rotation);
+		}
 	}
 }

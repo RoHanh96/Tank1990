@@ -13,9 +13,19 @@ public class PlayerController : MonoBehaviour {
 
 	public int level;
 
+	const int LV2 = 2;
+	const int LV3 = 3;
+	const int LV4 = 4;
+
+	public int exp = 0;
+
+	Animator animator;
+
 	// Use this for initialization
 	void Start () {
 		shootDelayCounter = 0;
+		level = 1;
+		animator = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -52,6 +62,21 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKey (KeyCode.Space) && shootDelayCounter <= 0) {
 			Shot ();
 			shootDelayCounter = shootDelay;
+		}
+
+		if (exp >= 300) {
+			level = 2;
+			animator.SetInteger ("Level_Up", LV2);
+		}
+
+		if (exp >= 500) {
+			level = 3;
+			animator.SetInteger ("Level_Up", LV3);
+		}
+
+		if (exp >= 700) {
+			level = 4;
+			animator.SetInteger ("Level_Up", LV4);
 		}
 	}
 
