@@ -21,10 +21,15 @@ public class PlayerController : MonoBehaviour {
 
 	Animator animator;
 
+	public bool canTravelWater;
+	public float storeSpeed;
+
 	// Use this for initialization
 	void Start () {
 		shootDelayCounter = 0;
 		level = 1;
+		canTravelWater = false;
+		storeSpeed = speed;
 		animator = GetComponent<Animator> ();
 	}
 	
@@ -81,7 +86,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void Shot (){
-		GameManager.Instance.Pause ();
+		//GameManager.Instance.Pause ();
 		Instantiate (bullet, firePoint.transform.position, firePoint.transform.rotation);
 	}
 
