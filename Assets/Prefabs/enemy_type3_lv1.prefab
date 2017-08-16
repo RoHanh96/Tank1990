@@ -39,13 +39,14 @@ GameObject:
   - component: {fileID: 114383967034822758}
   - component: {fileID: 95899322413670088}
   - component: {fileID: 61009853492744856}
+  - component: {fileID: 114986426457161852}
   m_Layer: 9
   m_Name: enemy_type3_lv1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1973392045333742
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +221,23 @@ MonoBehaviour:
   bullet: {fileID: 1196059944425872, guid: 735cac8e2aa2a724fa257603b6471b84, type: 2}
   shotDelay: 3
   collision: 0
+  explosion: {fileID: 1721146321057430, guid: 496309bd6ea280e419d7583f5dff8931, type: 2}
+--- !u!114 &114986426457161852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1645737527065280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c446b084b6813e418b0772d9fca548d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRange: 7
+  enemyBullet: {fileID: 1196059944425872, guid: 735cac8e2aa2a724fa257603b6471b84,
+    type: 2}
+  thePlayer: {fileID: 0}
+  waitBetweenShots: 1.5
 --- !u!212 &212832027532060128
 SpriteRenderer:
   m_ObjectHideFlags: 1

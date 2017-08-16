@@ -10,36 +10,39 @@ public class EnemyController : MonoBehaviour {
 	public int level;
 	//public bool canDestroyStone;
 	//public Transform shootPosition;
+	private int health;
 	const float clampBorderOffset = 1;
 	public GameObject bullet;
 	public float shotDelay;
 	public bool collision = false;
+	public GameObject explosion;
 	const int STATE_UP = 0;
 	const int STATE_DOWN = 1;
 	const int STATE_LEFT = 2;
 	const int STATE_RIGHT = 3;
 	private int currentState = STATE_UP;
-	private float timeMove = 1.00f;
+	private float timeMove = 2.00f;
 	private static float timeCounter = 0.00f;
+	private Emitter emitter;
 
-//	void Awake(){
-//
-//		bullet.GetComponent<BulletEnemy>().controller = this;
-//	}
-
-	IEnumerator Start(){
-		while(true){
-			FireBullet ();
-			yield return new WaitForSeconds (shotDelay);
-		}
+	void Awake(){
+		health = level;
+		emitter = FindObjectOfType<Emitter> ();
 	}
+
+//	IEnumerator Start(){
+//		while(true){
+//			yield return new WaitForSeconds (shotDelay);
+//		}
+//	}
 	// Update is called once per frame
 	void Update () {
 		//GoUp ();
 		timeCounter += Time.deltaTime;
 		if(timeCounter > timeMove || collision){
-			print (collision);
+			//print (collision);
 			currentState = RandomState ();
+			//print ("current state: " + currentState);
 			Move ();
 			Clamp ();
 			timeCounter = 0f;
@@ -54,7 +57,7 @@ public class EnemyController : MonoBehaviour {
 	int RandomState(){
 		int number;
 		do {
-			number = Random.Range (-1,4);
+			number = Random.Range (0,4);
 		} while(number == currentState);
 		return number;
 	}
@@ -128,6 +131,17 @@ public class EnemyController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D c){
 		if(c.tag == "Brick" || c.tag == "Stone" || c.tag == "Water" || c.tag == "Enemy"){
 			collision = true;
+		}
+		if(c.tag == "PlayerBullet"){
+			Transform playerBullerTransform = c.transform;
+			BulletPlayer bullet = playerBullerTransform.GetComponent<BulletPlayer> ();
+			health = health - bullet.power;
+			Destroy (c.gameObject);
+			if(health <= 0){
+				emitter.numberEnemyOnDisplay--;
+				Destroy (gameObject);
+				Instantiate (explosion, transform.position, transform.rotation);
+			}
 		}
 	}
 }

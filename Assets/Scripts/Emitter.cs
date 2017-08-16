@@ -13,7 +13,7 @@ public class Emitter : MonoBehaviour {
 	IEnumerator Start () {
 		while(true){
 			int currentEnemy = RandomEnemy ();
-			print (numberEnemyOnDisplay);
+			//print (numberEnemyOnDisplay);
 			if(numberEnemyOnDisplay < 4){
 				GameObject enemy = (GameObject)Instantiate (enemies[currentEnemy], enemies[currentEnemy].transform.position, Quaternion.identity);
 				enemy.SetActive (true);
@@ -22,7 +22,7 @@ public class Emitter : MonoBehaviour {
 				yield return new WaitForSeconds (2f);
 
 			}
-			print (numberOfEnemy);
+			//print (numberOfEnemy);
 			if(numberOfEnemy == MAX_ENEMY){
 				numberOfEnemy = 0;
 				yield break;

@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void Shot (){
+		GameManager.Instance.Pause ();
 		Instantiate (bullet, firePoint.transform.position, firePoint.transform.rotation);
 	}
 
