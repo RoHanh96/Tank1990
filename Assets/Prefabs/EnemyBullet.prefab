@@ -103,6 +103,10 @@ MonoBehaviour:
   speed: 10
   lifeTime: 5
   base_death: {fileID: 0}
+  respawnPoint: {fileID: 1179559395423298, guid: 1b15686ad7de5df44b0c94a51feddb2b,
+    type: 2}
+  player: {fileID: 1744375800234310, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+  explosion: {fileID: 1721146321057430, guid: 496309bd6ea280e419d7583f5dff8931, type: 2}
 --- !u!212 &212663744773605558
 SpriteRenderer:
   m_ObjectHideFlags: 1

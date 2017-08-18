@@ -10,8 +10,12 @@ public class BulletEnemy : MonoBehaviour {
 	//public bool canDestroyStone = false;
 	public SpriteRenderer base_death;
 	private GameObject base_;
+	private LifeManager lifeSystem;
+	public GameObject explosion;
+
 	void Start () {
 		controller = FindObjectOfType<EnemyController> ();
+		lifeSystem = FindObjectOfType<LifeManager>();
 	}
 	
 	// Update is called once per frame
@@ -22,8 +26,17 @@ public class BulletEnemy : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D c){
 		if(c.tag == "Player"){
-			Destroy (c.gameObject);
-			Destroy (gameObject);
+			if (!c.GetComponent<PlayerController> ().isImmortal) {
+				lifeSystem.TakeLife ();
+				Destroy (c.gameObject);
+				Destroy (gameObject);
+				Instantiate (explosion, c.transform.position, c.transform.rotation);
+				if (lifeSystem.lifeCounter > 0) {
+					lifeSystem.RespawnPlayer ();
+				}
+			} else {
+				Destroy (gameObject);
+			}
 		}
 		else if(c.tag == "Brick"){
 			Destroy (c.gameObject);

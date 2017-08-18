@@ -23,9 +23,9 @@ public class Item_Helmet : MonoBehaviour {
 			GetComponent<Renderer> ().enabled = false;
 
 			if (other.tag == "Player") {
-
+				other.GetComponent<PlayerController> ().isImmortal = true;
 				yield return new WaitForSeconds (duration);
-
+				other.GetComponent<PlayerController> ().isImmortal = false;
 			} else {
 				EnemyController[] enemyList = FindObjectsOfType<EnemyController> ();
 				for (int i = 0; i < enemyList.Length; i++) {

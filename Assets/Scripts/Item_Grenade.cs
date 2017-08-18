@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item_Grenade : MonoBehaviour {
+	private LifeManager lifeSystem;
 
 	// Use this for initialization
 	void Start () {
-		
+		lifeSystem = FindObjectOfType<LifeManager> ();
 	}
 	
 	// Update is called once per frame
@@ -30,6 +31,8 @@ public class Item_Grenade : MonoBehaviour {
 				for (int i = 0; i < playerList.Length; i++) {
 					Destroy (playerList[i].gameObject);
 				}
+				lifeSystem.TakeLife ();
+				lifeSystem.RespawnPlayer ();
 			}
 
 			Destroy (gameObject);

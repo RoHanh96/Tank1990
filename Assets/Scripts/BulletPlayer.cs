@@ -7,13 +7,9 @@ public class BulletPlayer : MonoBehaviour {
 	public GameObject explosion;
 	public PlayerController player;
 	public int power = 1;
-	private Emitter emitter;
-
 
 	// Use this for initialization
 	void Start () {
-		player = FindObjectOfType<PlayerController> ();
-		emitter = FindObjectOfType<Emitter> ();
 		player = FindObjectOfType<PlayerController> ();
 	}
 	
