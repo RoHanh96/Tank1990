@@ -281,7 +281,53 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1001 &1856134287
+=======
+--- !u!1001 &1526396846
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.765847
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.4485497
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062417550659692, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 113507ffa4b0a61449824316d7c0cb79, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1627901978
+>>>>>>> e_fix_ver_1
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
