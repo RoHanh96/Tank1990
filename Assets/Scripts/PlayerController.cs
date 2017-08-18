@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour {
 	public bool canTravelWater;
 	public float storeSpeed;
 
+	public bool isImmortal;
+
 	// Use this for initialization
 	void Start () {
 		shootDelayCounter = 0;

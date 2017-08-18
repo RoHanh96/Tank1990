@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Item_Tank : MonoBehaviour {
 
+	private LifeManager lifeSystem;
+
 	// Use this for initialization
 	void Start () {
-		
+		lifeSystem = FindObjectOfType<LifeManager> ();
 	}
 	
 	// Update is called once per frame
@@ -18,7 +20,7 @@ public class Item_Tank : MonoBehaviour {
 
 		if (other.tag == "Player" || other.tag == "Enemy") {
 			if (other.tag == "Player") {
-				
+				lifeSystem.GiveLife ();
 			} else {
 				other.GetComponent<EnemyController> ().level = 4;
 			}
