@@ -35,10 +35,10 @@ public class BulletPlayer : MonoBehaviour {
 		}
 		if (other.tag == "Enemy") {
 			player.exp += 100;
-			emitter.numberEnemyOnDisplay--;
+			//emitter.numberEnemyOnDisplay--;
 			Destroy (gameObject);
-			Destroy (other.gameObject);
-			Instantiate (explosion, other.transform.position, other.transform.rotation);
+			//Destroy (other.gameObject);
+			//Instantiate (explosion, other.transform.position, other.transform.rotation);
 		}
 	}
 }
