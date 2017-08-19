@@ -11,6 +11,8 @@ TagManager:
   - EnemyBullet
   - PlayerBullet
   - Water
+  - BaseWall
+  - Box_Camera
   layers:
   - Default
   - TransparentFX

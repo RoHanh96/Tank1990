@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 61060545720221276}
   - component: {fileID: 114175041119148542}
   m_Layer: 9
-  m_Name: enemy_type1_lv1
+  m_Name: Enemy_type1_lv1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556364776771176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.911135, y: -2.4877625, z: 0}
+  m_LocalPosition: {x: -7.78, y: 4.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4171678169011446}
@@ -104,7 +104,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229426240662694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 1.11, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.92, z: 0}
   m_LocalScale: {x: 1.6012497, y: 0.30000025, z: 1}
   m_Children: []
   m_Father: {fileID: 4125969920119642}
@@ -179,7 +179,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
 --- !u!61 &61448162164112300
 BoxCollider2D:
@@ -204,7 +204,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!61 &61567166117850372
 BoxCollider2D:
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c446b084b6813e418b0772d9fca548d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRange: 7
+  playerRange: 10
   enemyBullet: {fileID: 1196059944425872, guid: 735cac8e2aa2a724fa257603b6471b84,
     type: 2}
   thePlayer: {fileID: 0}
@@ -275,7 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89302ddecd8310340a4bcd8cd6cbac2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2.6
+  bulletSpeed: 8
   type: 1
   level: 1
   bullet: {fileID: 1196059944425872, guid: 735cac8e2aa2a724fa257603b6471b84, type: 2}

@@ -39,6 +39,6 @@ public class Emitter : MonoBehaviour {
 	}
 
 	int RandomEnemy(){
-		return Random.Range (0, 15);
+		return Random.Range (0, 19);
 	}
 }
