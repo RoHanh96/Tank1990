@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed;
+	public float bulletSpeed;
 	public int type;
 	public int level;
 	//public bool canDestroyStone;
@@ -23,16 +24,19 @@ public class EnemyController : MonoBehaviour {
 	private int currentState = STATE_UP;
 	private float timeMove = 2.00f;
 	private static float timeCounter = 0.00f;
-	private Emitter emitter;
+	//private Emitter emitter;
+	private Emitter1 emitter1;
 
 	public bool canTravelWater;
 	public float storeSpeed;
 
-	void Awake(){
+	void Start(){
 		health = level;
+		print (health);
 		canTravelWater = false;
 		storeSpeed = speed;
-		emitter = FindObjectOfType<Emitter> ();
+		//emitter = FindObjectOfType<Emitter> ();
+		emitter1 = FindObjectOfType<Emitter1> ();
 	}
 
 //	IEnumerator Start(){
@@ -134,7 +138,7 @@ public class EnemyController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D c){
-		if(c.tag == "Brick" || c.tag == "Stone" || c.tag == "Water" || c.tag == "Enemy"){
+		if(c.tag == "Brick" || c.tag == "Stone" || c.tag == "Water" || c.tag == "Enemy" || c.tag == "Box_Camera"){
 			collision = true;
 		}
 		if(c.tag == "PlayerBullet"){
@@ -142,8 +146,10 @@ public class EnemyController : MonoBehaviour {
 			BulletPlayer bullet = playerBullerTransform.GetComponent<BulletPlayer> ();
 			health = health - bullet.power;
 			Destroy (c.gameObject);
+			collision = true;
 			if(health <= 0){
-				emitter.numberEnemyOnDisplay--;
+				//emitter.numberEnemyOnDisplay--;
+				emitter1.numberEnemyOnDisplay--;
 				Destroy (gameObject);
 				Instantiate (explosion, transform.position, transform.rotation);
 			}

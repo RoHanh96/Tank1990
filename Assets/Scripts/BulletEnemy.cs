@@ -1,11 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletEnemy : MonoBehaviour {
 	public EnemyController controller;
 	// Use this for initialization
-	public int speed;
+	private float speed;
 	public float lifeTime;
 	//public bool canDestroyStone = false;
 	public SpriteRenderer base_death;
@@ -16,6 +16,7 @@ public class BulletEnemy : MonoBehaviour {
 	void Start () {
 		controller = FindObjectOfType<EnemyController> ();
 		lifeSystem = FindObjectOfType<LifeManager>();
+		speed = controller.bulletSpeed;
 	}
 	
 	// Update is called once per frame
@@ -43,7 +44,7 @@ public class BulletEnemy : MonoBehaviour {
 			Destroy (gameObject);
 		}
 		else if(c.tag == "Stone"){
-			if(controller.type == 4){
+			if(controller.type == 5){
 				Destroy (c.gameObject);
 				Destroy (gameObject);
 				//canDestroyStone = false;
