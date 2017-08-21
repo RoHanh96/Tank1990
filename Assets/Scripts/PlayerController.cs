@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour {
 	Animator animator;
 
 	public bool canTravelWater;
-	public float storeSpeed;
 
 	public bool isImmortal;
 
@@ -31,7 +30,6 @@ public class PlayerController : MonoBehaviour {
 		shootDelayCounter = 0;
 		level = 1;
 		canTravelWater = false;
-		storeSpeed = speed;
 		animator = GetComponent<Animator> ();
 	}
 	

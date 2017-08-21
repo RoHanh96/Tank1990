@@ -28,13 +28,11 @@ public class EnemyController : MonoBehaviour {
 	private Emitter1 emitter1;
 
 	public bool canTravelWater;
-	public float storeSpeed;
 
 	void Start(){
 		health = level;
 		print (health);
 		canTravelWater = false;
-		storeSpeed = speed;
 		//emitter = FindObjectOfType<Emitter> ();
 		emitter1 = FindObjectOfType<Emitter1> ();
 	}
