@@ -8,8 +8,6 @@ public class BulletEnemy : MonoBehaviour {
 	private float speed;
 	public float lifeTime;
 	//public bool canDestroyStone = false;
-	public SpriteRenderer base_death;
-	private GameObject base_;
 	private LifeManager lifeSystem;
 	public GameObject explosion;
 

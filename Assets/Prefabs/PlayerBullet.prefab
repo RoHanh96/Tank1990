@@ -105,6 +105,7 @@ MonoBehaviour:
   speed: 10
   explosion: {fileID: 1721146321057430, guid: 496309bd6ea280e419d7583f5dff8931, type: 2}
   player: {fileID: 0}
+  power: 1
 --- !u!212 &212591287179180662
 SpriteRenderer:
   m_ObjectHideFlags: 1

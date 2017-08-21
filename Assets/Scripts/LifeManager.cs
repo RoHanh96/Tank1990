@@ -9,25 +9,24 @@ public class LifeManager : MonoBehaviour {
 	public int lifeCounter;
 
 	public GameObject gameOverScreen;
-	public PlayerController player;
+
 
 	public GameObject respawnPoint;
 	public GameObject playerRespawn;
+
+	private PlayerController player;
 
 	// Use this for initialization
 	void Start () {
 		lifeText = GetComponent<Text> ();
 		lifeCounter = 3;
-		player = FindObjectOfType<PlayerController> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (lifeCounter == 0) {
-			gameOverScreen.SetActive (true);
-			//player.gameObject.SetActive (false);
+			GameOver ();
 		}
-
 		lifeText.text = "x " + lifeCounter;
 	}
 
@@ -40,6 +39,14 @@ public class LifeManager : MonoBehaviour {
 	}
 
 	public void RespawnPlayer(){
-		Instantiate (playerRespawn, respawnPoint.transform.position, respawnPoint.transform.rotation);
+		if (!gameOverScreen.gameObject.activeSelf) {
+			Instantiate (playerRespawn, respawnPoint.transform.position, respawnPoint.transform.rotation);
+		}
+	}
+
+	public void GameOver(){
+		player = FindObjectOfType<PlayerController> ();
+		player.gameObject.SetActive (false);
+		gameOverScreen.SetActive (true);
 	}
 }

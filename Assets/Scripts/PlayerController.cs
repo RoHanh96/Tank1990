@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 	const int LV3 = 3;
 	const int LV4 = 4;
 
-	public int exp = 0;
+	//public int exp = 0;
 
 	Animator animator;
 
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour {
 			shootDelayCounter = shootDelay;
 		}
 
-		if (exp >= 300) {
+		/*if (exp >= 300) {
 			level = 2;
 			animator.SetInteger ("Level_Up", LV2);
 		}
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour {
 		if (exp >= 700) {
 			level = 4;
 			animator.SetInteger ("Level_Up", LV4);
-		}
+		}*/
 	}
 
 	public void Shot (){
@@ -103,5 +103,5 @@ public class PlayerController : MonoBehaviour {
 		pos.y = Mathf.Clamp (pos.y, min.y + height/2, max.y - height/2);
 
 		transform.position = pos;
-	}
+	}		
 }
