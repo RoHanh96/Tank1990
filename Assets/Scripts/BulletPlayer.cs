@@ -30,7 +30,7 @@ public class BulletPlayer : MonoBehaviour {
 			Destroy (other.gameObject);
 		}
 		if (other.tag == "Enemy") {
-			player.exp += 100;
+			//player.exp += 100;
 			//emitter.numberEnemyOnDisplay--;
 			Destroy (gameObject);
 			//Destroy (other.gameObject);

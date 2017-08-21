@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61147533040728646}
   - component: {fileID: 114478217828008760}
   m_Layer: 0
-  m_Name: Item_Grenade
+  m_Name: item_grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93451f988e445694f80c446a5f0e810f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
 --- !u!212 &212684305361226730
 SpriteRenderer:
   m_ObjectHideFlags: 1

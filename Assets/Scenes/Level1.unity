@@ -108,6 +108,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
 --- !u!1001 &39198753
 Prefab:
   m_ObjectHideFlags: 0
@@ -385,50 +386,46 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &743022977
+=======
+--- !u!1001 &156291213
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.011464596
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.58584183
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
-        type: 2}
+    - target: {fileID: 4451395265443098, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224214643112980628, guid: 08c8685f7f6206b4c93f82f854bf7343,
@@ -547,12 +544,21 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1219039983
+=======
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9e8139b0650ab0c4d9863d20f5ec2a41, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &330628939
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -591,6 +597,42 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 766.2868
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 187.4874
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433675519822336, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b86eabfa930fab842b994bb0ea6e013c, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
   m_IsPrefabParent: 0
 --- !u!1 &1246715525
 GameObject:
@@ -679,15 +721,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1271580567
+=======
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1284373540
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5.000596
@@ -701,17 +750,45 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -719,17 +796,51 @@ Prefab:
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
       propertyPath: m_RootOrder
       value: 7
+=======
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 114836103183015598, guid: 1bd13f46c48392f47b8317a4550d2099,
+        type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1179559395423298, guid: 1b15686ad7de5df44b0c94a51feddb2b,
+        type: 2}
+    - target: {fileID: 114836103183015598, guid: 1bd13f46c48392f47b8317a4550d2099,
+        type: 2}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1721146321057430, guid: 496309bd6ea280e419d7583f5dff8931,
+        type: 2}
+    - target: {fileID: 114836103183015598, guid: 1bd13f46c48392f47b8317a4550d2099,
+        type: 2}
+      propertyPath: playerRespawn
+      value: 
+      objectReference: {fileID: 1744375800234310, guid: 1bd13f46c48392f47b8317a4550d2099,
+        type: 2}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
   m_ParentPrefab: {fileID: 100100000, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1284373540
+=======
+  m_ParentPrefab: {fileID: 100100000, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1346837212
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4082353471051972, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
       propertyPath: m_LocalPosition.x
       value: -3.19
@@ -764,6 +875,42 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bd13f46c48392f47b8317a4550d2099, type: 2}
+=======
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -7.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401170461444766, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dd9f9783448c538409a94a0a3048426c, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
   m_IsPrefabParent: 0
 --- !u!1 &1459117709
 GameObject:
@@ -827,13 +974,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
 --- !u!1001 &1541524303
+=======
+--- !u!1001 &1468713137
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5.000596
@@ -847,17 +999,41 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4533361569196430, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -872,6 +1048,66 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
+=======
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431553957249238, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114478217828008760, guid: ac451a0d6748bed40a4d2ecd6225c675,
+        type: 2}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1721146321057430, guid: 496309bd6ea280e419d7583f5dff8931,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ac451a0d6748bed40a4d2ecd6225c675, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1501543152
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
   m_IsPrefabParent: 0
 --- !u!1 &1571209110
 GameObject:
@@ -927,13 +1163,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
 --- !u!1001 &1673267152
+=======
+--- !u!1001 &1725871150
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Scenes/Tank.unity
     - target: {fileID: 4114526370721626, guid: 65dd6fd618dcef947b3c0aad10ab3223, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1107,3 +1348,98 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c6cf13a933ecd44f8511a15bdc29ba3, type: 2}
   m_IsPrefabParent: 0
+=======
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062163639956592, guid: 08c8685f7f6206b4c93f82f854bf7343,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 08c8685f7f6206b4c93f82f854bf7343, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> main_menu:Assets/Scenes/Level1.unity
