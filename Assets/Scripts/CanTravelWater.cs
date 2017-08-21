@@ -17,24 +17,25 @@ public class CanTravelWater : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Water" && parent.tag == "Player") {
-			if (!parent.GetComponent<PlayerController> ().canTravelWater) {
-				parent.GetComponent<PlayerController> ().speed = 0f;
-			}
-		} else {
-			if (other.tag == "Water" && parent.tag == "Enemy") {
-				parent.GetComponent<EnemyController> ().speed = 0f;
+		if (other.tag == "Water") {
+			if(parent.tag == "Player"){
+				if (parent.GetComponent<PlayerController> ().canTravelWater) {
+					other.tag = "CanTravelWater";
+					other.isTrigger = true;
+				}
+			} else {
+				if (parent.GetComponent<EnemyController> ().canTravelWater) {
+					other.tag = "CanTravelWater";
+					other.isTrigger = true;
+				}
 			}
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D other){
-		if (other.tag == "Water" && parent.tag == "Player") {
-			parent.GetComponent<PlayerController> ().speed = parent.GetComponent<PlayerController> ().storeSpeed;
-		} else {
-			if (other.tag == "Water" && parent.tag == "Enemy") {
-				parent.GetComponent<EnemyController> ().speed = parent.GetComponent<EnemyController> ().storeSpeed;
-			}
+		if ((other.tag == "Water" || other.tag == "CanTravelWater") && (parent.tag == "Player" || parent.tag == "Enemy")) {
+			other.tag = "Water";
+			other.isTrigger = false;
 		}
 	}
 }
